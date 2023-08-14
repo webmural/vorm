@@ -1,0 +1,68 @@
+@media (color) {
+  ::selection { background: #010101; color: orangered }
+  .flora :not(.nativa) { color: inherit }
+  .sol.sol { background: #ec0; color: #010101 }
+  .luna.luna { background: #090909; color: hotpink }
+  .jugo.jugo { background: hotpink; color: #090909 }
+  .metal.metal { background: limegreen; color: #090909 }
+  :any-link { color: inherit }
+  .sol a { text-shadow: 1vw -1vh 1vmax gold }
+  .luna a { text-shadow: -1vw 1vh 1vmax salmon }
+  .jugo a { text-shadow: -1vw 1vh 1vmax deeppink }
+  .metal a { text-shadow: 1vw -1vh 1vmax lime }
+}
+
+@media (prefers-contrast: more) {
+  .sol.sol { background: plum }
+  .luna.luna { color: pink }
+  .jugo.jugo { background: pink }
+}
+
+:any-link {
+  text-decoration-style: wavy;
+  border-radius: 100%;
+}
+
+:focus {
+  outline-color: currentColor;
+  outline-offset: .2ex;
+  outline-style: double;
+  outline-width: .8ex;
+}
+
+html {
+  font-family: sans-serif;
+  font-size: max(3ex, 3vmax);
+}
+
+body {
+  line-height: 1.6;
+  padding: 1em;
+  display: flex;
+  flex-flow: column;
+  margin: auto;
+}
+
+samp {
+  display: flow-root;
+  margin: 1em;
+}
+
+.espejo  {
+  transform: rotate(180deg);
+}
+
+.curva {
+  border-radius: .2em;
+}
+
+.pad {
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+.voz {
+  font-size: 0;
+  line-height: 0;
+  margin: 0;
+}
